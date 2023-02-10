@@ -3,7 +3,7 @@ function Logo(props) {
   
   let imgSrc =  "images/logo.svg";
 
-    if(props.imgType === "muted") {
+    if(props.type === "muted") {
         imgSrc = "images/logo-muted.svg";
     // else if(props.type="muted") {
     //     props.src = "../../../public/images/logo-muted.svg"
@@ -11,7 +11,7 @@ function Logo(props) {
 
 
 
-    let Logo = <img src={ imgSrc } type={ props.imgType } alt="logo" ></img>;
+    let Logo = <img src={ imgSrc } type={ props.type } alt="logo" ></img>;
 
 
     return (
