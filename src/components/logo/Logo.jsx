@@ -1,9 +1,12 @@
 
-function Logo(props) {
+function Logo(type) {
   
+    // let type = "default";
+    console.log(type)
+
   let imgSrc =  "images/logo.svg";
 
-    if(props.type === "muted") {
+    if(type.type === "muted") {
         imgSrc = "images/logo-muted.svg";
     // else if(props.type="muted") {
     //     props.src = "../../../public/images/logo-muted.svg"
@@ -11,7 +14,7 @@ function Logo(props) {
 
 
 
-    let Logo = <img src={ imgSrc } type={ props.type } alt="logo" ></img>;
+    let Logo = <img src={ imgSrc } type={ type } alt="logo" ></img>;
 
 
     return (
@@ -19,8 +22,8 @@ function Logo(props) {
     );
 }
 
-Logo.defaultProps = {
-    imgeType: "default"
-}
+// Logo.defaultProps = {
+//     imgeType: "default"
+// }
 
     export default Logo;
