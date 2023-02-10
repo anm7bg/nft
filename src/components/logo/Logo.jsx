@@ -5,13 +5,14 @@ export default function Logo(props) {
 
     let src = "";
 
-    if(type="default") {
-        src = "../../../public/images/logo.svg"
-    }else {
-        src = "../../../public/images/logo-muted.svg"
+    if(props.type="default") {
+        props.src = "../../../public/images/logo.svg"
+    }
+    else if(props.type="muted") {
+        props.src = "../../../public/images/logo-muted.svg"
     }
 
-    let Logo = <img src={ src } type={ type } alt="logo" ></img>;
+    let Logo = <img src={ props.src } type={ props.type } alt="logo" ></img>;
 
     return (
         Logo
