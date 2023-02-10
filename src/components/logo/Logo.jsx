@@ -1,17 +1,27 @@
+import * as React from "react";
 
-function Logo(props) {
+
+export default function Logo(props) {
   
-  let imgSrc =  "images/logo.svg";
+    // type = "default";
+    console.log("type");
+    console.log(props.type);
 
-    if(props.imgType === "muted") {
+    let imgSrc =  "images/logo.svg";
+
+
+    if(props.type === "muted") {
         imgSrc = "images/logo-muted.svg";
     // else if(props.type="muted") {
     //     props.src = "../../../public/images/logo-muted.svg"
     }
+    // else {
+    //     type = "default";
+    // };
 
 
 
-    let Logo = <img src={ imgSrc } type={ props.imgType } alt="logo" ></img>;
+    let Logo = <img src={ imgSrc } type={ props.type || "default"} alt="logo" ></img>;
 
 
     return (
@@ -19,8 +29,6 @@ function Logo(props) {
     );
 }
 
-Logo.defaultProps = {
-    imgeType: "default"
-}
-
-    export default Logo;
+// Logo.defaultProps = {
+//     imgeType: "default"
+// }
