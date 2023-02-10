@@ -1,5 +1,5 @@
 
-function Logo(type) {
+export default function Logo(type) {
   
     // let type = "default";
     console.log(type)
@@ -25,5 +25,3 @@ function Logo(type) {
 // Logo.defaultProps = {
 //     imgeType: "default"
 // }
-
-    export default Logo;

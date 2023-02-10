@@ -8,7 +8,7 @@ import Logo from "../../src/components/logo/Logo"
 export default function About() {
   return (
     <Container maxWidth="sm">
-      <Logo type="muted" />
+      <Logo />
       <Grid container justifyContent="center">
         <Grid item>
           <Button variant="contained" component={Link} noLinkStyle href="/">
