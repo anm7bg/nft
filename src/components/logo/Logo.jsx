@@ -1,5 +1,5 @@
-import logo from "../../../public/images/logo.png"
-export default function Logo() {
+
+export default function Logo(props) {
   
     let type = "default";
 
@@ -11,7 +11,9 @@ export default function Logo() {
         src = "../../../public/images/logo-muted.svg"
     }
 
+    let Logo = <img src={ src } type={ type } alt="logo" ></img>;
+
     return (
-        <img src={ src } type={ type } alt="logo" ></img>
+        Logo
     );
 }
