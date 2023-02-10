@@ -1,5 +1,6 @@
 import * as React from "react";
 
+
 export default function Logo(props) {
   
     // type = "default";
@@ -20,7 +21,7 @@ export default function Logo(props) {
 
 
 
-    let Logo = <img src={ imgSrc } type={ props.type } alt="logo" ></img>;
+    let Logo = <img src={ imgSrc } type={ props.type || "default"} alt="logo" ></img>;
 
 
     return (
