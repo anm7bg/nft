@@ -1,8 +1,8 @@
-export default function Avatar({verified = false, size = "90px", url = "/images/avatar.png"}) {
+export default function Avatar({verified = false, size = "90", url = "/images/avatar.png"}) {
 
     let divSize = {
-        width: { size },
-        height: { size }
+        width: size ,
+        height: size
         // background: "red"
     }
 
@@ -14,8 +14,8 @@ export default function Avatar({verified = false, size = "90px", url = "/images/
         verifiedBadgeDisplay.display = "block";
     }
 
-    console.log("verified");
-    console.log(verified);
+    console.log("size");
+    console.log(size);
 
     return(
         <div className="avatar" style={ divSize }>
