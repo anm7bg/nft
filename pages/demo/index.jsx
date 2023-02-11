@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Link from "../../src/components/link/Link";
 import Logo from "../../src/components/logo/Logo"
 import Header from "../../src/components/header/Header";
+import Avatar from "../../src/components/avatar/Avatar";
 
 export default function About() {
   return (
@@ -17,6 +18,7 @@ export default function About() {
           </Button>
         </Grid>
       </Grid>
+      <Avatar verified="true" dinamicWidth="200px" dinamicHeight="200px"/>
     </Container>
   );
 }
