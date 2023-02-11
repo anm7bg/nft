@@ -10,20 +10,14 @@ export default function Logo(props) {
     let imgSrc =  "images/logo.svg";
 
 
-    // if(props.type === "muted") {
-    //     imgSrc = "images/logo-muted.svg";
-    // }
+    if(props.type === "muted") {
+        imgSrc = "images/logo-muted.svg";
+    }
 
-
-
-    let Logo = <img src={ imgSrc } type={ props.type || "default"} alt="logo" ></img>;
 
 
     return (
-        Logo
+        <img src={ imgSrc } type={ props.type || "default"} alt="logo" ></img>
     );
 }
 
-// Logo.defaultProps = {
-//     imgeType: "default"
-// }
