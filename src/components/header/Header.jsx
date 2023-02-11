@@ -2,8 +2,8 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Container from "@mui/material/Container";
 import Link from "../link/Link";
-import styles from "../Example/Example.module.scss";
-import classNames from "classnames";
+// import styles from "../Example/Example.module.scss";
+// import classNames from "classnames";
 
 
 
