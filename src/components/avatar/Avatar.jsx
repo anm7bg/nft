@@ -1,8 +1,8 @@
-export default function Avatar({verified = false, dinamicWidth = "90px", dinamicHeight = "90px", imageUrl= "/images/avatar.png"}) {
+export default function Avatar({verified = false, size = "90px", url = "/images/avatar.png"}) {
 
-    let size = {
-        width: dinamicWidth,
-        height: dinamicHeight
+    let divSize = {
+        width: { size },
+        height: { size }
         // background: "red"
     }
 
@@ -18,9 +18,9 @@ export default function Avatar({verified = false, dinamicWidth = "90px", dinamic
     console.log(verified);
 
     return(
-        <div className="avatar" style={size}>
-            <img src={imageUrl} className="image" width="100%" alt="avatar"></img>
-            <img src="/images/verified.svg" style={verifiedBadgeDisplay}  className="badge" alt="badge" />
+        <div className="avatar" style={ divSize }>
+            <img src={ url } className="image" width="100%" alt="avatar"></img>
+            <img src="/images/verified.svg" style={ verifiedBadgeDisplay }  className="badge" alt="badge" />
         </div>
     );
 }
