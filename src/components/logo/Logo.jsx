@@ -17,7 +17,7 @@ export default function Logo(props) {
 
 
     return (
-        <img src={ imgSrc } type={ props.type || "default"} alt="logo" ></img>
+        <img src={ imgSrc } type={ props.type} alt="logo" ></img>
     );
 }
 
