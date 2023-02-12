@@ -1,4 +1,4 @@
-export default function Avatar({verified = false, size, url = "/images/avatar.png"}) {
+export default function Avatar({verified = false, size={width:"90px", height:"90px"}, url = "/images/avatar.png"}) {
 
     // size = {
     //     width: "90px",
@@ -15,7 +15,7 @@ export default function Avatar({verified = false, size, url = "/images/avatar.pn
     }
 
     console.log("size");
-    // console.log(size);
+    console.log(size);
 
     return(
         <div className="avatar" style={ size }>
@@ -24,6 +24,6 @@ export default function Avatar({verified = false, size, url = "/images/avatar.pn
         </div>
     );
 }
-Avatar.defaultProps = {
-    size:{width:"90px", height: "90px"}
-}
+// Avatar.defaultProps = {
+//     size:{width:"90px", height: "90px"}
+// }
