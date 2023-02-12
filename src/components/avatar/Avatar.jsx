@@ -1,10 +1,10 @@
 export default function Avatar({verified = false, size, url = "/images/avatar.png"}) {
 
-    size = {
-        width: "90px",
-        height: "90px"
-        // background: "red"
-    }
+    // size = {
+    //     width: "90px",
+    //     height: "90px"
+    //     // background: "red"
+    // }
 
     let verifiedBadgeDisplay = {
         display: "none"
@@ -24,6 +24,6 @@ export default function Avatar({verified = false, size, url = "/images/avatar.pn
         </div>
     );
 }
-// Avatar.defaultProps = {
-//     size{width = "90px"}
-// }
+Avatar.defaultProps = {
+    size:{width:"90px", height: "90px"}
+}
