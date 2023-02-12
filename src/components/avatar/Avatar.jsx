@@ -18,9 +18,12 @@ export default function Avatar({verified = false, size, url = "/images/avatar.pn
     // console.log(size);
 
     return(
-        <div className="avatar" style={ size ? {width:size, height:size} : {width:"90px", height:"90px"} }>
+        <div className="avatar" style={ {width:size, height:size}}>
             <img src={ url } className="image" width="100%" alt="avatar"></img>
             <img src="/images/verified.svg" style={ verifiedBadgeDisplay }  className="badge" alt="badge" />
         </div>
     );
+}
+Avatar.defaultProps = {
+    size: "90px"
 }

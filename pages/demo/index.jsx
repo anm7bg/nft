@@ -18,7 +18,7 @@ export default function About() {
           </Button>
         </Grid>
       </Grid>
-      <Avatar verified="true" size="200px"/>
+      <Avatar verified="true"/>
     </Container>
   );
 }
