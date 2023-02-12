@@ -1,4 +1,4 @@
-export default function Avatar({verified = false, size = "90px", url = "/images/avatar.png"}) {
+export default function Avatar({verified = false, size, url = "/images/avatar.png"}) {
 
     // let divSize = {
     //     width: size ,
@@ -15,10 +15,10 @@ export default function Avatar({verified = false, size = "90px", url = "/images/
     }
 
     console.log("size");
-    console.log(size);
+    // console.log(size);
 
     return(
-        <div className="avatar" style={ {width: size, height: size} }>
+        <div className="avatar" style={ size ? {width:size, height:size} : {width:"90px", height:"90px"} }>
             <img src={ url } className="image" width="100%" alt="avatar"></img>
             <img src="/images/verified.svg" style={ verifiedBadgeDisplay }  className="badge" alt="badge" />
         </div>
