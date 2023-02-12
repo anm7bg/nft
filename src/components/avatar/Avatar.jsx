@@ -1,10 +1,10 @@
-export default function Avatar({verified = false, size= {width:"90px", height:"90px"}, url = "/images/avatar.png"}) {
+export default function Avatar({verified = false, size, url = "/images/avatar.png"}) {
 
-    // let divSize = {
-    //     width: size ,
-    //     height: size
+    size = {
+        width: "90px",
+        height: "90px"
         // background: "red"
-    // }
+    }
 
     let verifiedBadgeDisplay = {
         display: "none"
