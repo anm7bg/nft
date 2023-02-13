@@ -1,4 +1,4 @@
-export default function Avatar({verified = false, size="90px", url = "/images/avatar.png"}) {
+export default function Avatar({size=90, verified = false, url = "/images/avatar.png"}) {
 
 
     let verifiedBadgeDisplay = {
