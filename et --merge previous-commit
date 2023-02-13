@@ -1,0 +1,260 @@
+[33mcommit 6c07e17ee751ce81778165b86eb97635e5056383[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Mon Feb 13 14:28:47 2023 +0200
+
+    fix errors
+
+[33mcommit e366be165833ed2244566db91df9ea14ae04e837[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Mon Feb 13 13:55:38 2023 +0200
+
+    fix errors
+
+[33mcommit e07171acacf883843af58243d35f58d1a01cb314[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 23:24:51 2023 +0200
+
+    fix errors
+
+[33mcommit c38275b63be80b2431d8bf4e9f21dd8849430d46[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 23:13:55 2023 +0200
+
+    fix errors
+
+[33mcommit 1715f04dcc179e537f41ad4ca564e991d69c7825[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 22:54:17 2023 +0200
+
+    fix errors
+
+[33mcommit dc0ac41a82aa109e4cc6ec11ba0aeaafa18a3010[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 22:32:14 2023 +0200
+
+    fix errors
+
+[33mcommit 61047127671a10964161c43bdc1b15cb2b09005f[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 20:38:17 2023 +0200
+
+    fix errors
+
+[33mcommit 1dea9b6a7903ca818900a67181cb765a4eaa09cc[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 20:16:13 2023 +0200
+
+    fix errors
+
+[33mcommit 286c825af70359fbbcda97cb4c794db052d89dac[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 19:27:19 2023 +0200
+
+    fix erors
+
+[33mcommit 1b0750842bbd3a9fe7d1afd9af9aa12c31e5b7a6[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 19:15:07 2023 +0200
+
+    fix errors
+
+[33mcommit 7c71025e412c7f1e2e044bbbda6ba07f440605ee[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 17:46:34 2023 +0200
+
+    fix errors
+
+[33mcommit 794987c8615908f8dc9022c0cb50349cdb4478fa[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 15:30:35 2023 +0200
+
+    fix errors
+
+[33mcommit 7418c25c6cc5010db6caa09629778dec9b9aebc1[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 01:11:29 2023 +0200
+
+    fix errors
+
+[33mcommit 28325dc5a9706cdbac2bd981f75a7a42f963919d[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 01:01:45 2023 +0200
+
+    fix errors
+
+[33mcommit f387fdd8c1c6f7c9902899c4586c6d8d577df87a[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sun Feb 12 00:52:25 2023 +0200
+
+    Added Avatar component
+
+[33mcommit 64bbd0ea2857f3c4db8987b41abc4cd0ad776eec[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 22:47:19 2023 +0200
+
+    Added header component
+
+[33mcommit 03fb0e100adb085100cb3426283d56d277214eb4[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 17:14:51 2023 +0200
+
+    try to fix errors
+
+[33mcommit bf9065cd7929e4c0c7bf2e09cc7a448b3a679ddb[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 17:00:45 2023 +0200
+
+    try to fix errors
+
+[33mcommit 162de5e2003c9150b20e7dfe9d0d3ba27c4e2332[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 16:53:55 2023 +0200
+
+    try to fix errors
+
+[33mcommit f4f5066e3f03ffc4a7d3241e1cb3231b410651db[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 16:49:24 2023 +0200
+
+    try to fix errors
+
+[33mcommit d69573902a938b6d2873c72cc6fd89672921b939[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 16:43:41 2023 +0200
+
+    try to fix errors
+
+[33mcommit fe45f4095f39db75ca503a7a689f35c9adbf5dd2[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 16:37:43 2023 +0200
+
+    try to fix errors
+
+[33mcommit 55b6238cbeb8e9a71aac17037e65b63bda9c7046[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 16:20:38 2023 +0200
+
+    fix errors
+
+[33mcommit f7a2527b68ebd1c2396685f1f08b3f6135bbb00e[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 00:49:59 2023 +0200
+
+    fix errors
+
+[33mcommit 25663e53c99f9015a053e57ccd3f299ea782c0da[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 00:44:50 2023 +0200
+
+    fix errors
+
+[33mcommit 20de53dcc18af7654a87e9a93056eca407017378[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Sat Feb 11 00:18:27 2023 +0200
+
+    fix errors
+
+[33mcommit 8b63e6f86103a53b192689dd126acc07d3eaea98[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Fri Feb 10 23:47:54 2023 +0200
+
+    fix errors
+
+[33mcommit 937eea5c9548a9203bd6675f6d22ce4618488fae[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Fri Feb 10 22:35:15 2023 +0200
+
+    fix errors
+
+[33mcommit a1f936d08306a71353faba8fbb8f90d40783da71[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Fri Feb 10 22:07:58 2023 +0200
+
+    fix errors
+
+[33mcommit cf9b4177479edcf543683fbfaa1a67f6de61e66e[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Fri Feb 10 22:06:14 2023 +0200
+
+    fix errors
+
+[33mcommit 93c97839b3a85ed94886d5296a1134999ce8779d[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Fri Feb 10 21:45:11 2023 +0200
+
+    Fix errors
+
+[33mcommit a8f620351decc88ac7abe3b02721c748c2247745[m
+Merge: 58f7a29 ca4f947
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Fri Feb 10 21:36:43 2023 +0200
+
+    Merge branch 'dev' of https://github.com/anm7bg/nft into dev
+
+[33mcommit 58f7a29a45f008432e17190f5065becfd69423bb[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Fri Feb 10 19:57:30 2023 +0200
+
+    Added props
+
+[33mcommit bf58d6e2137a5baf0dd4f9378484fc5dec806fc4[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Fri Feb 10 19:45:41 2023 +0200
+
+    Added logo element
+
+[33mcommit ca4f947b93139af68f2595a05b36103f8885c8a2[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Fri Feb 10 19:45:41 2023 +0200
+
+    Added logo element
+
+[33mcommit 29fd012d99eee2d84fc3761f5f22d2a083dd05a8[m
+Merge: 6c0861f b310fe8
+Author: anm7bg <nsite2014@gmail.com>
+Date:   Fri Feb 10 19:26:12 2023 +0200
+
+    Merge pull request #1 from anm7bg/dev
+    
+    Added logo component
+
+[33mcommit b310fe883158a85a19259b3d495e5dd3186e2719[m
+Author: A. Maslarov <nsite2014@gmail.com>
+Date:   Fri Feb 10 19:24:17 2023 +0200
+
+    Added logo component
+
+[33mcommit 6c0861f2beaaa205b1333cc1aa3f3670a5b75137[m
+Merge: 0c4f50e 26654f8
+Author: Dimitar K. Nikolov <8962936-dimitarnikolov@users.noreply.gitlab.com>
+Date:   Tue Nov 16 08:42:24 2021 +0000
+
+    Merge branch 'add-data-folder' into 'master'
+    
+    chore: added data folder in boilerplate
+    
+    See merge request boomdotdev/projects/project-4!1
+
+[33mcommit 26654f8adb17a7ac13f1d1fdac57e4b1f97bd164[m
+Author: martin pandarski <martin.pandarski@boom.dev>
+Date:   Tue Nov 16 09:43:00 2021 +0200
+
+    chore: added data folder in boilerplate
+
+[33mcommit 0c4f50efcff91969a63531cabfebb7f4bceecc06[m
+Author: Dimitar K. Nikolov <d.nikolov@boom.dev>
+Date:   Fri Nov 5 10:16:14 2021 +0200
+
+    chore: add package-lock.json
+
+[33mcommit 800416ce6cf9cdf73644365cea38fe470209df09[m
+Author: Dimitar Nikolov <dimitar.nikolov@boom.dev>
+Date:   Fri Nov 5 10:04:03 2021 +0200
+
+    feat: set exact versions of dependencies
+
+[33mcommit 8f75a3c7687783a1dd9e84baec1159d5f8936d56[m
+Author: Hristiyan Ivanov <civanov.me@gmail.com>
+Date:   Mon Oct 11 13:45:31 2021 +0300
+
+    feat: add initial commit
