@@ -19,7 +19,7 @@ export default function Avatar({verified = false, size={width:"90px", height:"90
 
     return(
         <div className="avatar" style={ size }>
-            <img src={ url } className="image" width="100%" alt="avatar"></img>
+            <img src={ url } className="image" width={size.width} alt="avatar"></img>
             <img src="/images/verified.svg" style={ verifiedBadgeDisplay }  className="badge" alt="badge" />
         </div>
     );
