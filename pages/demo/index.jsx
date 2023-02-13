@@ -6,6 +6,7 @@ import Link from "../../src/components/link/Link";
 import Logo from "../../src/components/logo/Logo"
 import Header from "../../src/components/header/Header";
 import Avatar from "../../src/components/avatar/Avatar";
+import User from "../../src/components/user/user";
 
 export default function About() {
   return (
@@ -18,7 +19,7 @@ export default function About() {
           </Button>
         </Grid>
       </Grid>
-      <Avatar verified="true"  />
+      <User  name="Ivan"/>
     </Container>
   );
 }
