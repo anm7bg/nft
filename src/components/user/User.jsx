@@ -1,6 +1,6 @@
 import Avatar from "../avatar/Avatar";
 
-export default function User({name="", info="", avatar="", size=55, verified=false}) {
+export default function User({name=" ", info=" ", avatar=" ", size=55, verified=false}) {
 
     console.log("test")
     console.log("name ",name ," info ",info);
