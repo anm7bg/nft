@@ -4,11 +4,11 @@ import Avatar from '../avatar/Avatar';
 import millify from "millify";
 import { FavoriteIcon } from '@mui/icons-material';
 
-export default function Card() {
+export default function Card(url, verified, mediaUrl, title, price, currency, likes=0  ) {
 
     return(
         <Card className="card">
-            <Avatar />
+            <Avatar url={url} verified={verified} />
             <CardMedia className='media'>
                 image={mediaUrl}
             </CardMedia>
