@@ -20,7 +20,7 @@ export default function About() {
           </Button>
         </Grid>
       </Grid>
-      <Card />
+      <Card likes="1000000" price={100} />
     </Container>
   );
 }
