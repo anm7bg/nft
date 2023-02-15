@@ -1,10 +1,10 @@
-import { CardContent, CardMedia, Chip } from '@mui/material';
-import {Card as MuiCard} from '@mui/material/Card';
+import { CardContent, CardMedia, Chip, Card as MuiCard, CardActions } from '@mui/material';
+// import {} from '@mui/material/Card';
 import Avatar from '../avatar/Avatar';
 import millify from "millify";
-import { FavoriteIcon } from '@mui/icons-material';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
-export default function Card( {url, verified, mediaUrl, title, price, currency, likes=0} ) {
+export default function Card( {url, verified, mediaUrl, name, price, currency, likes=0} ) {
     // let label = 
 
     return(
@@ -14,10 +14,11 @@ export default function Card( {url, verified, mediaUrl, title, price, currency, 
                 image={mediaUrl}
             </CardMedia>
             <CardContent>
-                <h2 className='title'>{title}</h2>
+                <h2 className='title'>{name}</h2>
                 <p className='price'>{price}{currency}</p>
-                <Chip icon={<FavoriteIcon />} className="likes" label={millify({likes})} variant="outlined"></Chip>
             </CardContent>
+            
+            <Chip icon={<FavoriteIcon />} className="likes" label={millify(likes)} variant="outlined" />
         </MuiCard>
     );
 }

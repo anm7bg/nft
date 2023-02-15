@@ -7,7 +7,7 @@ import Logo from "../../src/components/logo/Logo"
 import Header from "../../src/components/header/Header";
 import Avatar from "../../src/components/avatar/Avatar";
 import User from "../../src/components/user/user";
-import {Card as CardComponent} from "../../src/components/card/Card";
+import Card from "../../src/components/card/Card";
 
 export default function About() {
   return (
@@ -20,7 +20,7 @@ export default function About() {
           </Button>
         </Grid>
       </Grid>
-      {/* <CardComponent /> */}
+      <Card />
     </Container>
   );
 }
