@@ -2,7 +2,7 @@ import { CardContent, CardMedia, Chip } from '@mui/material';
 import Card from '@mui/material/Card';
 import Avatar from '../avatar/Avatar';
 import millify from "millify";
-import { Favorite } from '@mui/icons-material';
+import { FavoriteIcon } from '@mui/icons-material';
 
 export default function Card() {
 
