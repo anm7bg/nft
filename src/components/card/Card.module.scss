@@ -1,6 +1,13 @@
 .card, .media {
     border-radius: 25px;
 }
-.avatar {
+.media {
+    >div {
+        img:first-of-type{
+            border-radius: 50%;
+        }  
+    }
+} 
+.avatar img:first-of-type {
     border-radius: 50%;
 }

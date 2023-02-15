@@ -7,7 +7,6 @@ import styles from "./Card.module.scss";
 
 
 export default function Card( {url, verified, mediaUrl, name, price, currency, likes=0} ) {
-    // let label = 
 
     return(
         <MuiCard className={styles.card}>
