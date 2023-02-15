@@ -12,8 +12,8 @@ export default function Card( {url, verified, mediaUrl, name, price, currency, l
     return(
         <MuiCard className={styles.card}>
             <Avatar url={url} verified={verified} />
-            <CardMedia className='media'>
-                image={mediaUrl}
+            <CardMedia className={styles.media}
+                image={mediaUrl} >
             </CardMedia>
             <CardContent>
                 <h2 className='title'>{name}</h2>
