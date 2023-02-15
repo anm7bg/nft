@@ -17,7 +17,7 @@ export default function Card( {url, verified, mediaUrl, name, price, currency, l
             </CardMedia>
             <CardContent>
                 <h2 className='title'>{name}</h2>
-                <p className='price'>~{price}{currency}</p>
+                <p className='price'>~{price} {currency}</p>
             </CardContent>
             
             <Chip icon={<FavoriteIcon />} className="likes" label={millify(likes)} variant="outlined" />
