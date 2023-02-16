@@ -1,5 +1,5 @@
 .card, .media {
-    border-radius: 25px;
+    border-radius: 10px;
 }
 .media {
     >div {
@@ -8,6 +8,6 @@
         }  
     }
 } 
-.avatar img:first-of-type {
+.avatar img {
     border-radius: 50%;
 }
