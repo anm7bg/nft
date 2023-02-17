@@ -2,11 +2,11 @@ import { Container, Grid, FormControl, InputLabel, Select, MenuItem } from "@mui
 import Card from '../card/Card';
 
 
-export default function Trending({Title="Trending", cards=[], name, url, verified, mediaUrl, price, curency}) {
+export default function Trending({title="Trending", cards=[], name, url, verified, mediaUrl, price, curency}) {
 
     return(
-        <Container>
-            <div><h1>{Title}</h1></div>
+        <Container fixed>
+            <div><h1>{title}</h1></div>
             <div>
             <FormControl fullWidth>
                 <InputLabel id="simple-select-label">Age</InputLabel>
