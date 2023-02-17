@@ -12,7 +12,7 @@ export default function Card( {name=String, url, verified, mediaUrl, price, curr
         <MuiCard className={styles.card}>
             <Avatar className={styles.avatar} url={url} verified={verified} />
             <img className={styles.media} src={mediaUrl}></img>
-            <h2 className={styles.title}>{name}</h2>
+            <div className={styles.title}>{name}</div>
             <p className='price'>~{price} {currency}</p>
             <Chip icon={<FavoriteIcon />} className="likes" label={millify(likes)} variant="outlined" />
         </MuiCard>
