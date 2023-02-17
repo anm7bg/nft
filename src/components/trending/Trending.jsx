@@ -4,12 +4,12 @@ import Card from '../card/Card';
 
 export default function Trending({ cards=[], }) {
 
-   
+
     function cardsMap() {
             return(
                 cards.map(card =>
                     <Grid item>
-                        <Card name={card.name} />
+                        <Card title={card.name} />
                     </Grid>) 
         );
     }
