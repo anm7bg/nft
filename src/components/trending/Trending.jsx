@@ -5,14 +5,7 @@ import Card from '../card/Card';
 export default function Trending({ cards=[], }) {
 
 
-    function cardsMap() {
-            return(
-                cards.map(card =>
-                    <Grid item>
-                        <Card title={card.name} />
-                    </Grid>) 
-        );
-    }
+
 
     return(
         <Container fixed>
@@ -37,8 +30,12 @@ export default function Trending({ cards=[], }) {
             </Container>
            
             <Grid container>
-                {cardsMap()}
-               
+                {/* {cardsMap()} */}
+                {cards.slice(0, 4).map((card, index) => (
+            <Grid item md={3} key={index}>
+              <Card {...card} />
+            </Grid>
+))}              
             </Grid>
         </Container>
     );
