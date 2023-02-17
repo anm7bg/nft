@@ -8,6 +8,7 @@ import Header from "../../src/components/header/Header";
 import Avatar from "../../src/components/avatar/Avatar";
 import User from "../../src/components/user/user";
 import Card from "../../src/components/card/Card";
+import Trending from "../../src/components/trending/Trending";
 
 export default function About() {
   return (
@@ -20,7 +21,8 @@ export default function About() {
           </Button>
         </Grid>
       </Grid>
-      <Card likes="1000000" price={100} currency="ETH" mediaUrl="/images/avatar.png" />
+      {/* <Card likes="1000000" price={100} currency="ETH" mediaUrl="/images/avatar.png" /> */}
+      <Trending />
     </Container>
   );
 }
