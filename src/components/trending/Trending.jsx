@@ -25,6 +25,15 @@ export default function Trending(name, url, verified, mediaUrl, price, curency) 
                 <Grid item>
                     <Card />
                 </Grid>
+                <Grid item>
+                    <Card />
+                </Grid>
+                <Grid item>
+                    <Card />
+                </Grid>
+                <Grid item>
+                    <Card />
+                </Grid>
             </Grid>
         </Container>
     );
