@@ -1,10 +1,10 @@
 import { Container, Grid } from "@mui/material";
 
-export default function Trending({name, url, verified, mediaUrl, price, curency}) {
+export default function Trending({cards=[], name, url, verified, mediaUrl, price, curency}) {
 
     return(
         <Container>
-            <div><h1>Trendung</h1></div>
+            <div><h1>Trending</h1></div>
             <div>
             <FormControl fullWidth>
                 <InputLabel id="simple-select-label">Age</InputLabel>
