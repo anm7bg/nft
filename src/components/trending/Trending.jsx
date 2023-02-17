@@ -2,13 +2,14 @@ import { Container, Grid, FormControl, InputLabel, Select, MenuItem } from "@mui
 import Card from '../card/Card';
 
 
-export default function Trending({ cards=[], title}) {
+export default function Trending({ cards=[], }) {
 
+   
     function cardsMap() {
             return(
                 cards.map(card =>
                     <Grid item>
-                        <Card title={card.name} />
+                        <Card name={card.name} />
                     </Grid>) 
         );
     }
