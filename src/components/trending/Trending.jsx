@@ -2,7 +2,7 @@ import { Container, Grid, FormControl, InputLabel, Select, MenuItem } from "@mui
 import Card from '../card/Card';
 
 
-export default function Trending({ cards=[], name, url, verified, mediaUrl, price, curency}) {
+export default function Trending({ cards, name, url, verified, mediaUrl, price, curency}) {
 
     return(
         <Container fixed>
