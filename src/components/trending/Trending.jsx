@@ -5,10 +5,62 @@ import Card from '../card/Card';
 export default function Trending({ cards=[], }) {
 
 
+ cards = [
+      {
+         "name":"Ivy",
+         "user":{
+            "avatar":{
+               "url":"images/avatar.png"
+            },
+            "verified":true
+         },
+         "mediaUrl":"images/nft.jpg",
+         "price":1,
+         "currency":"ETH"
+      },
+      {
+         "name":"Judie",
+         "user":{
+            "avatar":{
+               "url":"images/avatar.png"
+            },
+            "verified":true
+         },
+         "mediaUrl":"images/nft.jpg",
+         "price":2.3,
+         "currency":"ETH"
+      },
+      {
+         "name":"Juniper",
+         "user":{
+            "avatar":{
+               "url":"images/avatar.png"
+            },
+            "verified":true
+         },
+         "mediaUrl":"images/nft.jpg",
+         "price":5,
+         "currency":"ETH"
+      },
+      {
+         "name":"Maple",
+         "user":{
+            "avatar":{
+               "url":"images/avatar.png"
+            },
+            "verified":true
+         },
+         "mediaUrl":"images/nft.jpg",
+         "price":10,
+         "currency":"ETH"
+      }
+   ];
+   {cards.slice(0, 4).map((card, index) => (
 
-
+    console.log({...card})
+   ))}
     return(
-        <Container fixed>
+        <div>
             <Container>
                 <div><h1>Trending</h1></div>
                 <div>
@@ -32,11 +84,11 @@ export default function Trending({ cards=[], }) {
             <Grid container>
                 {/* {cardsMap()} */}
                 {cards.slice(0, 4).map((card, index) => (
-            <Grid item md={3} key={index}>
-              <Card {...card} />
+                <Grid item md={3} key={index}>
+                    <Card {...card} />
+                </Grid>
+                ))}              
             </Grid>
-))}              
-            </Grid>
-        </Container>
+        </div>
     );
 }
