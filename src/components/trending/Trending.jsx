@@ -28,16 +28,16 @@ export default function Trending({title, cards=[], name, url, verified, mediaUrl
            
             <Grid container>
                 <Grid item>
-                    <Card title />
+                    <Card name={cards[0].name} />
                 </Grid>
                 <Grid item>
-                    <Card title/>
+                    <Card name={cards[1].name}/>
                 </Grid>
                 <Grid item>
-                    <Card title />
+                    <Card name={cards[2].name} />
                 </Grid>
                 <Grid item>
-                    <Card title />
+                    <Card name={cards[3].name} />
                 </Grid>
             </Grid>
         </Container>
