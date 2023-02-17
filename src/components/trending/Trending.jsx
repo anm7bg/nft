@@ -1,6 +1,6 @@
 import { Container, Grid } from "@mui/material";
 
-export default function Trending(name, url, verified, mediaUrl, price, curency) {
+export default function Trending({name, url, verified, mediaUrl, price, curency}) {
 
     return(
         <Container>
