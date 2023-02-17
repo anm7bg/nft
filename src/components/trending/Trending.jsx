@@ -2,7 +2,16 @@ import { Container, Grid, FormControl, InputLabel, Select, MenuItem } from "@mui
 import Card from '../card/Card';
 
 
-export default function Trending({ cards, name, url, verified, mediaUrl, price, curency}) {
+export default function Trending({ cards=[], title}) {
+
+    function cardsMap() {
+            return(
+                cards.map(card =>
+                    <Grid item>
+                        <Card title={card.name} />
+                    </Grid>) 
+        );
+    }
 
     return(
         <Container fixed>
@@ -27,18 +36,8 @@ export default function Trending({ cards, name, url, verified, mediaUrl, price, 
             </Container>
            
             <Grid container>
-                <Grid item>
-                    <Card name={cards[0].name} />
-                </Grid>
-                <Grid item>
-                    <Card name={cards[1].name}/>
-                </Grid>
-                <Grid item>
-                    <Card name={cards[2].name} />
-                </Grid>
-                <Grid item>
-                    <Card name={cards[3].name} />
-                </Grid>
+                {cardsMap()}
+               
             </Grid>
         </Container>
     );
