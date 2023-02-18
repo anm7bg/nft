@@ -6,7 +6,7 @@ import styles from "./Card.module.scss";
 
 
 export default function Card( {
-    title,
+    name,
     user = {
         avatar:{url},
         verified: true,
@@ -20,7 +20,7 @@ export default function Card( {
         <MuiCard className={styles.card}>
             <Avatar className={styles.avatar} url={user.avatar.url} verified={user.verified} />
             <img className={styles.media} src={mediaUrl}></img>
-            <h2 className={styles.title}>{title}</h2>
+            <h2 className={styles.title}>{name}</h2>
             <p className='price'>~{price} {currency}</p>
             <Chip icon={<FavoriteIcon />} className="likes" label={millify(likes)} variant="outlined" />
         </MuiCard>
