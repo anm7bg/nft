@@ -6,7 +6,7 @@ export default function Trending({ cards=[], }) {
 
 
 
-   {cards.slice(0, 4).map((card, index) => (
+   {cards.slice(0, 4).map((card=[]) => (
 
     console.log({...card})
    ))}
