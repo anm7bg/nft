@@ -1,6 +1,6 @@
 import styles from "./Avatar.module.scss";
 
-export default function Avatar({className="styles.avatar", size=90, verified = false, url = "/images/avatar.png"}) {
+export default function Avatar({size=90, verified = false, url = "/images/avatar.png"}) {
 
 
     let verifiedBadgeDisplay = {
@@ -15,7 +15,7 @@ export default function Avatar({className="styles.avatar", size=90, verified = f
     console.log(size);
 
     return(
-        <div className={className} style={ {width:size} }>
+        <div className={styles.avatar} style={ {width:size} }>
             <img src={ url } className="image" width="100%" alt="avatar"></img>
             <img src="/images/verified.svg" style={ verifiedBadgeDisplay }  className="badge" alt="badge" />
         </div>

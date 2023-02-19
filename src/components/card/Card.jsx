@@ -1,28 +1,56 @@
-import { CardContent, CardMedia, Chip, Card as MuiCard, CardActions } from '@mui/material';
+import { CardContent, CardMedia, Chip, Card as MuiCard, Badge } from '@mui/material';
 import Avatar from '../avatar/Avatar';
 import millify from "millify";
+// import {FavoriteIcon, CircleIcon} from '@mui/icons-material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import CircleIcon from '@mui/icons-material/Circle';
 import styles from "./Card.module.scss";
+import Countdown from 'react-countdown';
+import { Circle } from '@mui/icons-material';
 
 
 export default function Card( {
     name,
     user = {
-        avatar:{url},
+        avatar: {url: "/images/avatar.png"},
         verified: true,
     }, 
     mediaUrl, 
     price, 
     currency, 
-    likes=0} ) {
+    likes= Number,
+    timeLeft = 5000,
+} )
+{
+
+    let badgeDisplay = {display:"inline-block"};
+
+    let DefaultCard = () => <p>{console.log(Countdown)}</p>;
+    // if (Countdown.props)
+    console.log(Countdown);
 
     return(
-        <MuiCard className={styles.card}>
-            <Avatar className={styles.avatar} url={user.avatar.url} verified={user.verified} />
-            <img className={styles.media} src={mediaUrl}></img>
+        <MuiCard id="card" className={styles.card}>
+            <Avatar url={user.avatar.url} verified={user.verified} /> 
+            <Badge className={styles.badge} style={ {badgeDisplay} } badgeContent={"Live".toUpperCase()}>
+              <CircleIcon />
+            </Badge>
+            <CardMedia 
+                component="img"
+                className={styles.media} 
+                src={mediaUrl}
+            />
+            <div>
+                <Countdown className={styles.countdown} date={Date.now() + timeLeft} onComplete={() => {
+                    document.getElementById("card").classList.add(styles.normal)
+                    console.log(badgeDisplay)
+                    return true
+                }
+                    }/>
+            </div>
             <h2 className={styles.title}>{name}</h2>
             <p className='price'>~{price} {currency}</p>
-            <Chip icon={<FavoriteIcon />} className="likes" label={millify(likes)} variant="outlined" />
+            <Chip icon={<FavoriteIcon />} className={styles.likes} label={millify(likes)} variant="outlined" />
         </MuiCard>
     );
 }

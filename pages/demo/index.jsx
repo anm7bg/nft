@@ -21,8 +21,8 @@ export default function About() {
           </Button>
         </Grid>
       </Grid>
-      {/* <Card likes="1000000" price={100} currency="ETH" mediaUrl="/images/avatar.png" /> */}
-      <Trending />
+      <Card likes="1000000" price={100} currency="ETH" mediaUrl="/images/avatar.png" />
+      {/* <Trending /> */}
     </Container>
   );
 }

@@ -2,6 +2,7 @@
     border-radius: 10px;
 }
 .media {
+    width:200px !important;
     >div {
         img:first-of-type{
             border-radius: 50%;
@@ -14,4 +15,9 @@
   }
 .avatar img {
     border-radius: 50%;
+}
+.normal {
+    .badge, .countdown {
+        display: none ;
+    }
 }
