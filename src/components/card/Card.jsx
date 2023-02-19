@@ -18,7 +18,7 @@ export default function Card( {
     mediaUrl, 
     price, 
     currency, 
-    likes= Number,
+    likes = 0,
     timeLeft = 5000,
 } )
 {
