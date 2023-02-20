@@ -12,14 +12,14 @@ import { Circle } from '@mui/icons-material';
 export default function Card( {
     name,
     user = {
-        avatar: {url: "/images/avatar.png"},
+        avatar: "/images/avatar.png",
         verified: true,
     }, 
     mediaUrl, 
     price, 
     currency, 
     likes = 0,
-    timeLeft = 5000,
+    timeLeft,
 } )
 {
 
@@ -31,7 +31,7 @@ export default function Card( {
 
     return(
         <MuiCard id="card" className={styles.card}>
-            <Avatar url={user.avatar.url} verified={user.verified} /> 
+            <Avatar url={user.avatar} verified={user.verified} /> 
             <Badge className={styles.badge} style={ {badgeDisplay} } badgeContent={"Live".toUpperCase()}>
               <CircleIcon />
             </Badge>
