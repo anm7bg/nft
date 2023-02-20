@@ -1,4 +1,7 @@
 import Logo from "../logo/Logo";
+import classNames from "classnames";
+import styles from "./Footer.module.scss";
+import { Container, Grid, Button } from "@mui/material";
 
 export default function Footer() {
 
@@ -7,14 +10,14 @@ export default function Footer() {
         <Container component="footer" className={classNames(styles.container)} maxWidth="xl">
         <Grid container spacing={2}>
             <Grid item xs={4}>
-                <Item><Logo /></Item>
+                <Logo />
             </Grid>
             <Grid item xs={4}>
-                <Item><p>Copyright ©2023</p></Item>
+                <p>Copyright ©2023</p>
             </Grid>
             <Grid item xs={4}>
-                <Item><Button variant="text">Privacy Policy</Button></Item>
-                <Item><Button variant="text">Cookie Policy</Button></Item>
+                <Button className={styles.button} variant="text">Privacy Policy</Button>
+                <Button className={styles.button} variant="text">Cookie Policy</Button>
             </Grid>
         </Grid>
         </Container>
