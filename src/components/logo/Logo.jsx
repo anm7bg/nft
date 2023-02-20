@@ -1,7 +1,7 @@
 import * as React from "react";
 
 
-export default function Logo({type = "default"}) {
+export default function Logo({type = "muted"}) {
   
 //    let type = "default";
     console.log("type");
