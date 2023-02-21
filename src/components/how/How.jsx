@@ -1,4 +1,4 @@
-import { Container, Button } from "@mui/material";
+import { Container, Button, Grid } from "@mui/material";
 import styles from "./How.module.scss";
 
 export default function How({ description, title, items=[], link }) {
@@ -13,7 +13,7 @@ export default function How({ description, title, items=[], link }) {
                 </main>
                 <aside>
                     <Grid container spacing={2}>
-                        {items.map(step, index  => 
+                        {items.map((step, index)  => 
                              <Grid item>
                                 <Step number={index} {...step} />
                             </Grid>

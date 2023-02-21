@@ -11,11 +11,12 @@ import Card from "../../src/components/card/Card";
 import Trending from "../../src/components/trending/Trending";
 import Auctions from "../../src/components/auctions/Auctions";
 import Footer from "../../src/components/footer/Footer";
+import How from "../../src/components/how/How";
 
 export default function About() {
   return (
     <Container maxWidth="xl">
-      {/* <Header /> */}
+      <Header />
       <Grid container justifyContent="center">
         <Grid item>
           <Button variant="contained" component={Link} noLinkStyle href="/">
@@ -26,7 +27,8 @@ export default function About() {
       {/* <Card likes="1000000" price={100} currency="ETH" mediaUrl="/images/avatar.png" /> */}
       {/* <Trending /> */}
       {/* <Auctions /> */}
-      <Footer />
+      {/* <Footer /> */}
+      <How />
     </Container>
   );
 }
