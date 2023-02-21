@@ -29,6 +29,7 @@ export default function About() {
       {/* <Auctions /> */}
       {/* <Footer /> */}
       <How />
+      
     </Container>
   );
 }
