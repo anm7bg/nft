@@ -17,17 +17,18 @@ export default function Featured( { items =[] } ) {
           >
             {items.map((item, index) => (
             <ImageListItem 
-            key={item.image}>
-            cols = { item.cols || 1 }
-            rows = { item.rows || 1 }
-                <img
-                
-                    src={ item.image }
-                    alt={ item.title }
-                    loading="lazy"
-                    onClick={ () => router.push(item.href) }
-                />
-                </ImageListItem>
+                key={item.image}
+                cols = { item.cols || 1 }
+                rows = { item.rows || 1 }
+                >
+                    <img
+                    
+                        src={ item.image }
+                        alt={ item.title }
+                        loading="lazy"
+                        onClick={ () => router.push(item.href) }
+                    />
+            </ImageListItem>
             ))}
           </ImageList>
         </Container>
