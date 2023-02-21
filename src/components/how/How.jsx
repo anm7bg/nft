@@ -5,7 +5,7 @@ export default function How({ description, title, items=[], link }) {
 
     return(
         <div className={styles.wrapper}>
-            <Container className={styles.container} maxWidth="xl">
+            <Container className={styles.how} maxWidth="xl">
                 <main>
                     <h2>{ title }</h2>
                     <p>{ description }</p>

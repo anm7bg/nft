@@ -5,9 +5,9 @@ import { Grid } from "@mui/material";
 export default function Step({ number, title, description }) {
 
     return(
-        <div>
+        <div className={styles.how}>
             <Grid container spacing={2}>
-                <Grid item xs={4}>
+                <Grid item className={styles.numbers} xs={4}>
                     <p className={styles.number}>{ number }</p>
                 </Grid>
                 <Grid item xs={4}>
