@@ -15,7 +15,7 @@ export default function How( { description, title, items=[], link } ) {
                     <Grid container spacing={2}>
                         {items.map((step, index)  => 
                              <Grid item>
-                                <Step number={index} {...step} />
+                                <Step key={ index } number={ index + 1 } title={ step.title } description={ step.description }  />
                             </Grid>
                         )}
                     </Grid>
