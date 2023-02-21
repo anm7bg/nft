@@ -2,10 +2,7 @@
 
 .how {
     width: 90%;
-    .numbers {
-        background-color: colors.$primary_main;
-        .number {
-            color: rgba(255,255,255, 0.8);
-        }
+    .number {
+        background-color: rgba(colors.$primary_main, 10%);
     }
 }

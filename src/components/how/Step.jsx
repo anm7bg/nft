@@ -7,8 +7,8 @@ export default function Step({ number, title, description }) {
     return(
         <div className={styles.how}>
             <Grid container spacing={2}>
-                <Grid item className={styles.numbers} xs={4}>
-                    <p className={styles.number}>{ number }</p>
+                <Grid item className={styles.number} xs={4}>
+                    <p>{ number }</p>
                 </Grid>
                 <Grid item xs={4}>
                     <h2>{ title }</h2>
