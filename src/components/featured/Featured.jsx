@@ -15,12 +15,13 @@ export default function Featured( { items =[] } ) {
         //   rows={ 4 }
           cols={ 6 }
           >
-           
             {items.map((item, index) => (
-            <ImageListItem key={index}>
+            <ImageListItem 
+            key={index}>
+            cols = { item.cols || 1 }
+            rows = { item.rows || 1 }
                 <img
-                    cols = { item.cols || 1 }
-                    rows = { item.rows || 1 }
+                
                     src={ item.image }
                     alt={ item.title }
                     loading="lazy"
