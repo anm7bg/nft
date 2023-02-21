@@ -17,7 +17,7 @@ export default function Featured( { items =[] } ) {
           >
             {items.map((item, index) => (
             <ImageListItem 
-            key={index}>
+            key={item.image}>
             cols = { item.cols || 1 }
             rows = { item.rows || 1 }
                 <img
