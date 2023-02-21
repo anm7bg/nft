@@ -8,10 +8,6 @@ import Logo from "../../src/components/logo/Logo"
 export default function About() {
   return (
     <Container maxWidth="sm">
-<<<<<<< HEAD
-=======
-   
->>>>>>> parent of eada62e... Merge pull request #3 from anm7bg/dev
       <Grid container justifyContent="center">
         <Grid item>
           <Button variant="contained" component={Link} noLinkStyle href="/">

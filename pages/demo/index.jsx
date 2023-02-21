@@ -12,6 +12,7 @@ import Trending from "../../src/components/trending/Trending";
 import Auctions from "../../src/components/auctions/Auctions";
 import Footer from "../../src/components/footer/Footer";
 import How from "../../src/components/how/How";
+import Featured from "../../src/components/featured/Featured";
 
 export default function About() {
   return (
@@ -28,8 +29,8 @@ export default function About() {
       {/* <Trending /> */}
       {/* <Auctions /> */}
       {/* <Footer /> */}
-      <How />
-      
+      {/* <How /> */}
+      <Featured />
     </Container>
   );
 }
