@@ -1,7 +1,7 @@
 import { Container, Button, Grid } from "@mui/material";
 import styles from "./How.module.scss";
 
-export default function How({ description, title, items=[], link }) {
+export default function How( { description, title, items=[], link } ) {
 
     return(
         <div className={styles.wrapper}>
