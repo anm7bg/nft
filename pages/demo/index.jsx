@@ -25,12 +25,14 @@ export default function About() {
           </Button>
         </Grid>
       </Grid>
+      {/* <Avatar /> */}
+      <User name="Ivan" info="User info" />
       {/* <Card likes="1000000" price={100} currency="ETH" mediaUrl="/images/avatar.png" /> */}
       {/* <Trending /> */}
       {/* <Auctions /> */}
       {/* <Footer /> */}
       {/* <How /> */}
-      <Featured />
+      {/* <Featured /> */}
     </Container>
   );
 }

@@ -1,8 +1,23 @@
 @use "../../styles/colors";
 
 .user {
-    width: 50%;
+    width: fit-content;
+    padding: 0 10px;
+    background-color: colors.$background_user;
     .name, .info {
         font-size: 1rem;
+    }
+    .info {
+        color: colors.$secondary_main;
+    }
+    >div {
+        display: inline-block;
+    }
+    .userInfo {
+        padding: 0 40px;
+        margin: auto;
+        p {
+            margin: 15px 0;
+        }
     }
 }

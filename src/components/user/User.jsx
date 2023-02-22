@@ -1,11 +1,7 @@
 import Avatar from "../avatar/Avatar";
 import styles from "./User.module.scss";
 
-export default function User({name="", info="", avatar="", size=55, verified=false}) {
-
-    console.log("test")
-    console.log("name ",name ," info ",info);
-    // console.log(styles)
+export default function User( {name="", info="", avatar="", size=55, verified=false} ) {
 
     return(
         <div className={styles.user}>

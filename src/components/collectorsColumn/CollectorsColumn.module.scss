@@ -1,0 +1,18 @@
+@use "../../styles/colors";
+
+.collectorNumber {
+    background-color: colors.$background_number;
+}
+
+.collectorsList {
+    background-color: colors.$background_user;
+}
+.light {
+    .collectorNumber {
+        background-color: rgba(colors.$background_number, 10%);
+    }
+    
+    .collectorsList {
+        background-color: rgba(colors.$background_user, 10%);
+    }
+}
