@@ -1,8 +1,8 @@
 import Collector from "./Collector";
 import User from "../user/user";
-import styles from "./CollectorsColumn.module.scss"
+import styles from "./CollectorColumn.module.scss"
 
-export default function CollectorsColumn({ items=[] }) {
+export default function CollectorColumn({ items=[] }) {
  
     return(
         users.map((item, index) => {
@@ -20,7 +20,8 @@ export default function CollectorsColumn({ items=[] }) {
                     <Collector 
                         key={index}
                         name={item.name}
-                        info={ item.nftsCount + " Items" }
+                        // info={ item.nftsCount + " Items" }
+                        nftsCount={ item.nftsCount}
                         avatar={ avatar }
                         verified={ verified }
                         type={ type }
