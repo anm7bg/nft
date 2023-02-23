@@ -1,9 +1,23 @@
+import { Grid } from "@mui/material";
 import Collector from "./Collector";
 import styles from "./CollectorColumn.module.scss"
 
 export default function CollectorColumn( { items=[] } ) {
 
-
+    // items = [
+    //     {
+    //         name: "Ivan",
+    //         nftsCount: 10,
+    //         verified: true,
+    //         id: 10
+    //       },
+    //       {
+    //         name: "Ivan",
+    //         nftsCount: 10,
+    //         verified: true,
+    //         id: 10
+    //       }
+    // ]
  
   let classLight = styles.dark;
 
@@ -19,23 +33,18 @@ export default function CollectorColumn( { items=[] } ) {
                 type="darker";
             }
             return(
-                <div className={classLight}>
-                    <div className={styles.collectors}>
-                        <div className={styles.collectorNumber}>
-                            {index}
-                        </div>
-                        <div className={styles.collectorsList}>
+                <div className={classLight}>                    
+                    <Grid key={index+1} className={styles.collectors} container spacing={2}>
+                        <Grid item className={styles.collectorNumber} xs={1}>
+                            {index+1}
+                        </Grid>
+                        <Grid item className={styles.collectorsList} xs={3}>
                             <Collector 
-                                // key={index}
-                                name={item.name}
-                                // info={ item.nftsCount + " Items" }
-                                nftsCount={ item.nftsCount}
-                                avatar={ item.avatar }
-                                verified={ item.verified }
+                                {...item}
                                 type={type}
                             />
-                        </div>
-                    </div>
+                        </Grid>
+                    </Grid>
                 </div>
             )
         })

@@ -1,6 +1,7 @@
 @use "../../styles/colors";
 
 .collectors {
+    width: 27%;
     >div {
         display: inline-block;
     }
@@ -22,7 +23,7 @@
         
     }
     
-    .collectorsList {
+    .collectorsList, .user {
         background-color: rgba(colors.$background_user, 10%);
     }
 }
