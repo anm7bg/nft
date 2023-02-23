@@ -1,7 +1,16 @@
 @use "../../styles/colors";
 
+.collectors {
+    >div {
+        display: inline-block;
+    }
+}
+
 .collectorNumber {
     background-color: colors.$background_number;
+    padding: 0 25px;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .collectorsList {
@@ -10,6 +19,7 @@
 .light {
     .collectorNumber {
         background-color: rgba(colors.$background_number, 10%);
+        
     }
     
     .collectorsList {

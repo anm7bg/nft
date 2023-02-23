@@ -1,11 +1,15 @@
-import User from "../user/user";
+
+import User from "../user/User";
 import styles from "./Collector.module.scss"
 
-export default function Collector( {name, avatar, verified, type, nftsCount} ) {
+export default function Collector( {name, avatar, verified, type="darker", nftsCount} ) {
+
+    // name ="Ivan"
 
     return(
         <div className={styles.container}>
-            <User info={nftsCount + "Items"} />
+            <User name={name} info={nftsCount} avatar={avatar} verified={verified}/>
+            {/* <User name={name} info={nftsCount + "Items"} /> */}
         </div>
     );
 }
