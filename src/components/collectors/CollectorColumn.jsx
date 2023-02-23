@@ -39,7 +39,7 @@ export default function CollectorColumn( { items=[] } ) {
                         </div>
                         <div className={styles.collectorsList}>
                             <Collector 
-                                key={index}
+                                // key={index}
                                 name={item.name}
                                 // info={ item.nftsCount + " Items" }
                                 nftsCount={ item.nftsCount}

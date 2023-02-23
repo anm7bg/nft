@@ -8,7 +8,7 @@ export default function Collector( {name, avatar, verified, type="darker", nftsC
 
     return(
         <div className={styles.container}>
-            <User name={name} info={nftsCount} avatar={avatar} verified={verified}/>
+            <User name={name} info={nftsCount + " Items"} avatar={avatar} verified={verified}/>
             {/* <User name={name} info={nftsCount + "Items"} /> */}
         </div>
     );
