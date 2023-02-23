@@ -3,20 +3,7 @@ import styles from "./CollectorColumn.module.scss"
 
 export default function CollectorColumn( { items=[] } ) {
 
-    items = [
-        {
-            name: "Ivan",
-            nftsCount: 10,
-            verified: true,
-            id: 10
-          },
-          {
-            name: "Ivan",
-            nftsCount: 10,
-            verified: true,
-            id: 10
-          }
-    ]
+
  
   let classLight = styles.dark;
 
