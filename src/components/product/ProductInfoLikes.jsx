@@ -1,6 +1,7 @@
 import styles from "./ProductInfoLikes.module.scss";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Chip } from "@mui/material";
+import millify from "millify";
 
 
 export default function ProductInfoLikes({ amount=0 }) {
@@ -13,6 +14,7 @@ export default function ProductInfoLikes({ amount=0 }) {
                         label={millify(amount)} 
                         variant="outlined"
                     />
+                    
         </div>
     );
 }

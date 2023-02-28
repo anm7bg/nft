@@ -56,7 +56,7 @@ export default function Card( {
                    <p className={styles.price}>~{price} {currency}</p>
                 </div>
                 <div className={styles.likes}>
-                    <Chip icon={<FavoriteIcon />} className={styles.likesChip} label={millify(likes)} variant="outlined" />
+                     <Chip icon={<FavoriteIcon />} className={styles.likesChip} label={millify(likes)} variant="outlined" />
                 </div>
             </div>
         </MuiCard>
