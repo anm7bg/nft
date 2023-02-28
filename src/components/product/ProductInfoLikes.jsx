@@ -1,5 +1,6 @@
 import styles from "./ProductInfoLikes.module.scss";
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { Chip } from "@mui/material";
 
 
 export default function ProductInfoLikes({ amount=0 }) {
