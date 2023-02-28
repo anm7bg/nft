@@ -37,9 +37,9 @@ export default function About() {
       {/* <How /> */}
       {/* <Featured /> */}
       {/* <Collector/> */}
-      {/* <CollectorColumn /> */}
+      <CollectorColumn />
       {/* <User /> */}
-      <TopCollectors />
+      {/* <TopCollectors /> */}
     </Container>
   );
 }

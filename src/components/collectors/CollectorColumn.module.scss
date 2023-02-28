@@ -1,7 +1,7 @@
 @use "../../styles/colors";
 
 .collectors {
-    width: 27%;
+    border-radius: 25px;
     >div {
         display: inline-block;
     }
@@ -9,13 +9,21 @@
 
 .collectorNumber {
     background-color: colors.$background_number;
-    padding: 0 25px;
-    font-size: 3rem;
+    width: 19%;
+    height: 65px;
     font-weight: bold;
+    vertical-align: bottom;
+    p {
+        font-size: 1.5rem;
+        margin: 10px 35%;
+    }
 }
 
 .collectorsList {
+    width: 80%;
+    height: 65px;
     background-color: colors.$background_user;
+    // padding: 5px !important;
 }
 .light {
     .collectorNumber {

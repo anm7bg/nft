@@ -1,3 +1,5 @@
+@use "../../styles/colors";
+
 .nav {
     li {
         display: inline-block;
@@ -6,6 +8,11 @@
         a {
             color: #fff;
             text-decoration: none;
+            padding: 20px 40px;
+            border-radius: 25px;
+        }
+        a.active {
+            background-color: colors.$primary_main;
         }
     }
 }

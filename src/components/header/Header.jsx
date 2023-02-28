@@ -10,18 +10,18 @@ import Nav from "../nav/Nav";
 
 
 
-export default function Header() {
+export default function Header( { type } ) {
     return(
       <div className={classNames(styles.wrapper)}>
         <Container className={classNames(styles.container)} maxWidth="lg">
           <Grid container spacing={2}>
-              <Grid item xs={4}>
-                <Logo />
+              <Grid item xs={2}>
+                <Logo type={type}/>
               </Grid>
               <Grid item xs={4}>
                 <Search />
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={6}>
                 <Nav />
               </Grid>
             </Grid>

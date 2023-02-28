@@ -1,3 +1,4 @@
+import { Link } from "@mui/material";
 import * as React from "react";
 
 
@@ -17,7 +18,9 @@ export default function Logo({type = "muted"}) {
 
 
     return (
-        <img src={ imgSrc } type={ type} alt="logo" ></img>
+        <Link href="/">
+            <img src={ imgSrc } type={ type} alt="logo" ></img>
+        </Link>
     );
 }
 

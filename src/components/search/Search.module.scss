@@ -1,5 +1,22 @@
 @use "../../styles/colors";
 
-.searchform {
-    display: inline-block;
+.search {
+    background-color: colors.$background_default;
+    width: 85%;
+    border-radius: 25px;
+    padding: 5px;
+    margin-top: 12px;
+    .searchIcon {
+        vertical-align: bottom;
+    }
+    .searchForm {
+        display: inline-block;
+        width: 80%;
+        input {
+            background: transparent;
+            border: none;
+            color: #fff;
+            width: 100%;
+        }
+    }
 }

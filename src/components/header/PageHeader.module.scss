@@ -1,0 +1,20 @@
+.pageHeader {
+    >div {
+        display: inline-block;
+    }
+    .title {
+        width: 80%;
+        vertical-align: bottom;
+        h1 {
+            margin: 20px 0;
+        }
+    }
+    .form {
+        width: 19%;
+        margin: 20px 0;
+        svg {
+            color: #fff;
+        }
+    }
+
+}

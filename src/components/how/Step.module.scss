@@ -1,8 +1,24 @@
 @use "../../styles/colors";
 
-.how {
-    width: 90%;
-    .number {
-        background-color: rgba(colors.$primary_main, 10%);
+.step_main {
+    // width: 90%;
+    border-radius: 25px;
+    margin: 50px 0;
+    .step {
+        background-color: colors.$background_paper;
+        .number {
+            background-color: rgba(colors.$primary_main, 10%);
+            p{
+                font-size: 3.7rem;
+                margin: 50px 40%;
+                font-weight: bold;
+            }
+        }
+        .info {
+            padding: 30px;
+            h2 {
+                font-size: 0.85rem;
+            }
+        }
     }
 }

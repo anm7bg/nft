@@ -1,9 +1,32 @@
-.wrapper {
-    padding: 100px;
-  }
-  
-  .how {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-  }
+@use "../../styles/colors";
+
+.how {
+    margin: 100px 0;
+    // display: flex !important;
+    // align-items: center;
+    // justify-content: center;
+    background-color: colors.$primary_main;
+    .main {
+      height: 639px;
+      padding: 163px 20%;
+      h2 {
+        font-weight: bold;
+        font-size: 2.2rem;
+        margin: 0;
+      }
+      p {
+        width: 26%;
+      }
+      .button {
+        border-radius: 25px;
+        background-color: #fff;
+        color: colors.$primary_main;
+      }
+    }
+    .second {
+      width: 30%;
+      position: absolute;
+      right: 19%;
+      top: 1325px;
+    }
+}

@@ -3,5 +3,8 @@
         a {
             color: #fff;
         }
+        a.active {
+            background-color: colors.$primary_main;
+        }
     }
 }

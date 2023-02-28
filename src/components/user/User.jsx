@@ -5,7 +5,7 @@ export default function User( {name="", info="", avatar="", size=55, verified=fa
 
     return(
         <div className={styles.user}>
-            <Avatar />
+            <Avatar size={size} />
             <div className={styles.userInfo}>
                 <p className={styles.name}>{name}</p>
                 <p className={styles.info}>{info}</p>

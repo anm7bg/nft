@@ -5,7 +5,7 @@
     padding: 0 10px;
     // background-color: colors.$background_user;
     .name, .info {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
     .info {
         color: colors.$secondary_main;
@@ -14,10 +14,10 @@
         display: inline-block;
     }
     .userInfo {
-        padding: 0 40px;
+        padding: 5px !important;
         margin: auto;
         p {
-            margin: 15px 0;
+            margin: 5px 0;
         }
     }
 }

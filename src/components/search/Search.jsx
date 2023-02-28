@@ -10,10 +10,10 @@ import styles from './Search.module.scss'
 export default function Search() {
  
     return(
-        <div>
-            <SearchIcon />
-            <form action="#" method="get" className={styles.searchform}>
-                <input type="search" />
+        <div className={styles.search}>
+            <SearchIcon className={styles.searchIcon} />
+            <form action="#" method="get" className={styles.searchForm}>
+                <input type="search" defaultValue="Find items, users and activities" />
             </form>
         </div>
     );

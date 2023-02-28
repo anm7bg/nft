@@ -1,14 +1,11 @@
 import styles from "./TopCollectors.module.scss";
 import _ from "lodash";
-import { Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import CollectorColumn from "./CollectorColumn";
 import PageHeader from "../header/PageHeader";
+import { borderRadius } from '@mui/system';
 
 export default function TopCollectors( {collectors=[]} ) {
-
-    // var _ = require('lodash/core');
-
-    // var chunk = require('lodash.chunk');
 
     // collectors = [
     //     {
@@ -69,28 +66,24 @@ export default function TopCollectors( {collectors=[]} ) {
 
     collectors.map((item, index) => {
         item.id = index + 1
-        // console.log(item)
     })
-
-    // console.log(collectors);
 
     let collectorsChunk = _.chunk(collectors, 3);
 
-    // console.log(collectorsChunk);
-
     return(
-        <div className={styles.TopCollectors}>
-           <PageHeader title="Top Collectors" />
-            <Grid>
-                {
-                    collectorsChunk.map((item, index) => 
-                            <Grid item key={ index }>
-                                {/* {console.log(item)} */}
-                                <CollectorColumn items={ item } />
-                            </Grid>
-                    )
-                }
-            </Grid>
-        </div>
+        <Container className={styles.TopCollectors} maxWidth="xl">
+            <PageHeader title="Top Collectors" label="Sort by"/>
+               <Container className={styles.TopCollectors}>
+                <Grid container spacing={2}>
+                        {
+                            collectorsChunk.map((item, index) => 
+                                <Grid item className={styles.collectorsCol} borderRadius={'16px'} key={ index } xs={3}>
+                                    <CollectorColumn number={index+1} items={ item } />
+                                </Grid>
+                            )
+                        }
+                    </Grid>
+               </Container>
+        </Container>
     );
 }
