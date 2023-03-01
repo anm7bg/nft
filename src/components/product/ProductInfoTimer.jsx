@@ -5,7 +5,7 @@ export default function ProductInfoTimer({ timeEnd=null, onTimeEnd }) {
 
         if(timeEnd !== null) {
             return(
-                <div className={styles["product-info-timer"] && styles.active}>
+                <div className={`${styles["product-info-timer"]} ${styles.active}`}>
                     <div className={styles.header}>
                         <p className={styles.title}>Ends in</p>
                     </div>
