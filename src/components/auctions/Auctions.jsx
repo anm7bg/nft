@@ -5,10 +5,10 @@ import styles from "./Auctions.module.scss"
 
 export default function Auctions({ cards=[], style }) {
 
-   {cards.slice(0, 4).map((card=[], style) => (
+//    {cards.slice(0, 4).map((card=[], style) => (
 
-    console.log({...card})
-   ))}
+    // console.log({...card})
+//    ))}
     return(
         <Container className={styles.auctions}>
            <PageHeader title="Live Auctions" label="Price range" />

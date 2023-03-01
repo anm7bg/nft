@@ -1,13 +1,10 @@
 import { CardContent, CardMedia, Chip, Card as MuiCard, Badge } from '@mui/material';
 import Avatar from '../avatar/Avatar';
 import millify from "millify";
-// import {FavoriteIcon, CircleIcon} from '@mui/icons-material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import CircleIcon from '@mui/icons-material/Circle';
 import styles from "./Card.module.scss";
 import Countdown from 'react-countdown';
-import { Circle } from '@mui/icons-material';
-
 
 export default function Card( {
     name = "Some name",
@@ -45,7 +42,6 @@ export default function Card( {
             <div>
                 <Countdown className={styles.countdown} date={Date.now() + timeLeft} onComplete={() => {
                     document.getElementById("card").classList.add(styles.normal)
-                    console.log(badgeDisplay)
                     return true
                 }
                     }/>

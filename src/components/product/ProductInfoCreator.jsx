@@ -5,7 +5,7 @@ import styles from "./ProductInfoCreator.module.scss";
 export default function ProductInfoCreator({
 
     name = "Ivan",
-    avatar = string,
+    avatar = "/images/avatar.png",
     verified = false
 
 }) {

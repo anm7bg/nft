@@ -61,7 +61,7 @@ export default function Featured( { items =[] } ) {
           className={styles.imageList}
           cols={ 6 }
         >
-          {items.map((item, index) => (
+          {items.map((item) => (
           <ImageListItem 
               key={item.image}
               cols = { item.cols || 1 }
