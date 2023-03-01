@@ -18,6 +18,7 @@ import Collector from "../../src/components/collectors/Collector";
 import TopCollectors from "../../src/components/collectors/TopCollectors";
 import ProductInfoLikes from "../../src/components/product/ProductInfoLikes";
 import ProductInfoCreator from "../../src/components/product/ProductInfoCreator";
+import ProductInfoTimer from "../../src/components/product/ProductInfoTimer";
 
 export default function About() {
   return (
@@ -43,7 +44,8 @@ export default function About() {
       {/* <User /> */}
       {/* <TopCollectors /> */}
       {/* <ProductInfoLikes  /> */}
-      <ProductInfoCreator />
+      {/* <ProductInfoCreator /> */}
+      <ProductInfoTimer />
     </Container>
   );
 }
