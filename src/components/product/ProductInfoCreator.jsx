@@ -12,7 +12,7 @@ export default function ProductInfoCreator({
 
     return(
         <div className={styles["product-info-creator"]}>
-            <h3 className={styles.title}></h3>
+            <h3 className={styles.title}>Creator</h3>
             <div className={styles["user-container"]}>
                 <User name={name} avatar={avatar} verified={verified} />
             </div>
