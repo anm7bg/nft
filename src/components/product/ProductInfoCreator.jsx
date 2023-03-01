@@ -1,10 +1,11 @@
-import User from "../user/User";
+import { string } from "prop-types";
+import User from "../../components/user/User";
 import styles from "./ProductInfoCreator.module.scss";
 
 export default function ProductInfoCreator({
 
     name = "Ivan",
-    avatar = "/images/avatar.png",
+    avatar = string,
     verified = false
 
 }) {
