@@ -7,13 +7,44 @@ import { parseISO, formatDistance } from "date-fns";
 
 export default function ProductTabs({ text, bids=[] }) {
 
-    // bids = [
-    //     {
-    //        user,
-    //        amount,
-    //        date
-    //     },
-    //  ]
+    bids = [
+        {
+        user: {
+            avatar: "/images/avatar.png",
+            name: "Cupcat NFT 1",
+            verified: true,
+        },
+        amount: 300,
+        date: "2023-03-22T05:29:23.382Z",
+        },
+        {
+        user: {
+            avatar: "/images/avatar.png",
+            name: "Cupcat NFT 2",
+            verified: true,
+        },
+        amount: 1050,
+        date: "2023-03-22T06:29:23.382Z",
+        },
+        {
+        user: {
+            avatar: "/images/avatar.png",
+            name: "Cupcat NFT 3",
+            verified: true,
+        },
+        amount: 530,
+        date: "2023-03-22T08:29:23.382Z",
+        },
+        {
+        user: {
+            avatar: "/images/avatar.png",
+            name: "Cupcat NFT 4",
+            verified: true,
+        },
+        amount: 15000,
+        date: "2023-03-22T09:29:23.382Z",
+        },
+    ]
 
     const [value, setValue] = React.useState('1');
 
@@ -47,7 +78,7 @@ export default function ProductTabs({ text, bids=[] }) {
                             <TableBody>
                                 {bids.map((row, i) => (
                                     <TableRow
-                                    key={index}
+                                    key={i}
                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                     className={styles[`table-row-${i}`]}
                                     // className={`table-row-${i} ${styles["table-row"]}`}
