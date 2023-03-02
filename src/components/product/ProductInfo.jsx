@@ -18,13 +18,6 @@ export default function ProductInfo({
     isLive
 } ) {
 
-    let live = {display:"none"};
-
-    isLive ? live = {display:"block"} : live = {display:"none"}
-
-    console.log(isLive)
-    console.log(live)
-
     return(
         <div className={styles["product-info"]}>
             <ProductInfoTitle text={title} />
@@ -39,9 +32,7 @@ export default function ProductInfo({
                 <Grid item xs={5}>
                     <ProductInfoTimer onTimeEnd={onTimeEnd} timeEnd={timeEnd} />
                 </Grid>
-                <div style={ live }>
-                    <ProductInfoStatus />
-                </div>
+                {isLive && <ProductInfoStatus />}
             </Grid>
 
         </div>
