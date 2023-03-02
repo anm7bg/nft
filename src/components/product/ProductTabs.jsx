@@ -52,8 +52,6 @@ export default function ProductTabs({ text, bids=[] }) {
         setValue(newValue);
     };
 
-    // const parse = require('date-fns/parse');
-
 
     return(
         <div className={styles["product-tabs"]}>
