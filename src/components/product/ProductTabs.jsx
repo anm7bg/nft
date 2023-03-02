@@ -21,7 +21,7 @@ export default function ProductTabs({ text, bids=[] }) {
         setValue(newValue);
     };
 
-    const parse = require('date-fns/parse');
+    // const parse = require('date-fns/parse');
 
 
     return(
@@ -37,37 +37,36 @@ export default function ProductTabs({ text, bids=[] }) {
                     Details
                 </TabPanel>
                 <TabPanel value="2">
-                <TableContainer component="div">
-                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                        <TableHead>
-                            <TableRow>
-                                <TableCell>User</TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {bids.map((row, i) => (
-                                <TableRow
-                                key={index}
-                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                className={styles[`table-row-${i}`]}
-                                // className={`table-row-${i} ${styles["table-row"]}`}
-                                >
-                                    <TableCell component="th" scope="row">
-                                        <User {...row} />
-                                    </TableCell>
-                                    <TableCell component="th" scope="row">
-                                        {row.amount}
-                                    </TableCell>
-                                    <TableCell component="th" scope="row">
-                                        {formatDistance(parseISO(row.date), Date.now())}
-                                    </TableCell>
-
+                    <TableContainer component="div">
+                        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                            <TableHead>
+                                <TableRow>
+                                    <TableCell>User</TableCell>
                                 </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-                    <User  />
+                            </TableHead>
+                            <TableBody>
+                                {bids.map((row, i) => (
+                                    <TableRow
+                                    key={index}
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                    className={styles[`table-row-${i}`]}
+                                    // className={`table-row-${i} ${styles["table-row"]}`}
+                                    >
+                                        <TableCell component="th" scope="row">
+                                            <User {...row.user} />
+                                        </TableCell>
+                                        <TableCell component="th" scope="row">
+                                            {row.amount}
+                                        </TableCell>
+                                        <TableCell component="th" scope="row">
+                                            {formatDistance(parseISO(row.date), Date.now())}
+                                        </TableCell>
+
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </TableContainer>
                 </TabPanel>
             </TabContext>
         </div>
