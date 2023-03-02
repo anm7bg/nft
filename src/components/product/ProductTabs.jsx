@@ -78,7 +78,7 @@ export default function ProductTabs({ text, bids=[] }) {
                                     <TableRow
                                     key={i}
                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                    className={styles[`table-row-${i}`]}
+                                    className={styles[`table-row-${i} ${styles["table-row"]}`]}
                                     // className={`table-row-${i} ${styles["table-row"]}`}
                                     >
                                         <TableCell component="th" scope="row">
