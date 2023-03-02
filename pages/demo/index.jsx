@@ -20,6 +20,7 @@ import ProductInfoLikes from "../../src/components/product/ProductInfoLikes";
 import ProductInfoCreator from "../../src/components/product/ProductInfoCreator";
 import ProductInfoTimer from "../../src/components/product/ProductInfoTimer";
 import ProductInfo from "../../src/components/product/ProductInfo";
+import ProductTabs from "../../src/components/product/ProductTabs";
 
 export default function About() {
   return (
@@ -47,7 +48,8 @@ export default function About() {
       {/* <ProductInfoLikes  /> */}
       {/* <ProductInfoCreator /> */}
       {/* <ProductInfoTimer /> */}
-      <ProductInfo />
+      {/* <ProductInfo /> */}
+      <ProductTabs />
     </Container>
   );
 }
