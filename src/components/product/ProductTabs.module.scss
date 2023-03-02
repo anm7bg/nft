@@ -6,13 +6,11 @@
         padding: 5px;
     }
     .table-row {
-        .table-row {
-            &:nth-child(odd) {
-              background-color: rgba(colors.$primary_main, 5%) !important;
-            }
-            &:nth-child(even) {
-              background-color: rgba(colors.$primary_main, 15%) !important;
-            }
-          }
+        &:nth-child(odd) {
+            background-color: rgba(colors.$primary_main, 5%) !important;
+        }
+        &:nth-child(even) {
+            background-color: rgba(colors.$primary_main, 15%) !important;
+        }
     }
 }
