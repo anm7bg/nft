@@ -1,6 +1,7 @@
 import styles from "./Avatar.module.scss";
 
-export default function Avatar({size=90, verified = true, url = "/images/avatar.png"}) {
+export default function Avatar({size=90, verified = false, url}) {
+    // export default function Avatar({size=90, verified = true, url = "/images/avatar.png"}) {
 
     let badgeWidth = size / 3;
 
