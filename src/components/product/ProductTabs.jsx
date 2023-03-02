@@ -7,44 +7,44 @@ import { parseISO, formatDistance } from "date-fns";
 
 export default function ProductTabs({ text, bids=[] }) {
 
-    bids = [
-        {
-        user: {
-            avatar: "/images/avatar.png",
-            name: "Cupcat NFT 1",
-            verified: true,
-        },
-        amount: 300,
-        date: "2023-03-22T05:29:23.382Z",
-        },
-        {
-        user: {
-            avatar: "/images/avatar.png",
-            name: "Cupcat NFT 2",
-            verified: true,
-        },
-        amount: 1050,
-        date: "2023-03-22T06:29:23.382Z",
-        },
-        {
-        user: {
-            avatar: "/images/avatar.png",
-            name: "Cupcat NFT 3",
-            verified: true,
-        },
-        amount: 530,
-        date: "2023-03-22T08:29:23.382Z",
-        },
-        {
-        user: {
-            avatar: "/images/avatar.png",
-            name: "Cupcat NFT 4",
-            verified: true,
-        },
-        amount: 15000,
-        date: "2023-03-22T09:29:23.382Z",
-        },
-    ]
+    // bids = [
+    //     {
+    //     user: {
+    //         avatar: "/images/avatar.png",
+    //         name: "Cupcat NFT 1",
+    //         verified: true,
+    //     },
+    //     amount: 300,
+    //     date: "2023-03-22T05:29:23.382Z",
+    //     },
+    //     {
+    //     user: {
+    //         avatar: "/images/avatar.png",
+    //         name: "Cupcat NFT 2",
+    //         verified: true,
+    //     },
+    //     amount: 1050,
+    //     date: "2023-03-22T06:29:23.382Z",
+    //     },
+    //     {
+    //     user: {
+    //         avatar: "/images/avatar.png",
+    //         name: "Cupcat NFT 3",
+    //         verified: true,
+    //     },
+    //     amount: 530,
+    //     date: "2023-03-22T08:29:23.382Z",
+    //     },
+    //     {
+    //     user: {
+    //         avatar: "/images/avatar.png",
+    //         name: "Cupcat NFT 4",
+    //         verified: true,
+    //     },
+    //     amount: 15000,
+    //     date: "2023-03-22T09:29:23.382Z",
+    //     },
+    // ]
 
     const [value, setValue] = React.useState('1');
 
@@ -56,14 +56,12 @@ export default function ProductTabs({ text, bids=[] }) {
     return(
         <div className={styles["product-tabs"]}>
             <TabContext value={value}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <TabList onChange={handleChange}  aria-label="basic tabs example">
-                        <Tab label="Details" value="1" className={styles["tab-details"]} />
-                        <Tab label="Bids" value="2" className={styles["tab-bids"]} />
-                    </TabList>
-                </Box>
+                <TabList onChange={handleChange}  aria-label="basic tabs example">
+                    <Tab label={"Details"} value="1" className={styles["tab-details"]} />
+                    <Tab label={"Bids"} value="2" className={styles["tab-bids"]} />
+                </TabList>
                 <TabPanel value="1">
-                    Details
+                    {text}
                 </TabPanel>
                 <TabPanel value="2">
                     <TableContainer component="div">
@@ -78,7 +76,7 @@ export default function ProductTabs({ text, bids=[] }) {
                                     <TableRow
                                     key={i}
                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                                    className={styles[`table-row-${i} ${styles["table-row"]}`]}
+                                    className={`styles[table-row-${i}] ${styles["table-row"]}`}
                                     // className={`table-row-${i} ${styles["table-row"]}`}
                                     >
                                         <TableCell component="th" scope="row">
