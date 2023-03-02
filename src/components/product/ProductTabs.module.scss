@@ -1,9 +1,18 @@
+@use "../../styles/colors.scss";
+
 .product-tabs {
     padding: 5px;
     .tab-details, .tab-bids {
         padding: 5px;
     }
     .table-row {
-        display: block;
+        .table-row {
+            &:nth-child(odd) {
+              background-color: rgba(colors.$primary_main, 5%) !important;
+            }
+            &:nth-child(even) {
+              background-color: rgba(colors.$primary_main, 15%) !important;
+            }
+          }
     }
 }
