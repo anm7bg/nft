@@ -67,19 +67,19 @@ export default function ProductTabs({ text, bids }) {
                 <TabPanel value="2">
                         <Table sx={{ minWidth: 650 }} aria-label="simple table">
                             <TableBody>
-                                {bids.map((row, i) => (
+                                {bids.map((rowData, i) => (
                                     <TableRow
                                     key={i}
                                     className={`styles[table-row-${i}] ${styles["table-row"]}`}
                                     >
                                         <TableCell>
-                                            <User {...row.user} />
+                                            <User {...rowData.user} />
                                         </TableCell>
                                         <TableCell>
-                                            {row.amount}
+                                            {rowData.amount}
                                         </TableCell>
                                         <TableCell>
-                                            {formatDistance(parseISO(row.date), Date.now())}
+                                            {formatDistance(parseISO(rowData.date), Date.now())}
                                         </TableCell>
                                     </TableRow>
                                 ))}
