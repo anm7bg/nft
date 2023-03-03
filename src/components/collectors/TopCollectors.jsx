@@ -3,7 +3,7 @@ import _ from "lodash";
 import { Container, Grid } from "@mui/material";
 import CollectorColumn from "./CollectorColumn";
 import PageHeader from "../header/PageHeader";
-import { borderRadius } from '@mui/system';
+
 
 export default function TopCollectors( {collectors=[]} ) {
 
@@ -77,7 +77,7 @@ export default function TopCollectors( {collectors=[]} ) {
                 <Grid container spacing={2}>
                         {
                             collectorsChunk.map((item, index) => 
-                                <Grid item className={styles.collectorsCol} borderRadius={'16px'} key={ index } xs={3}>
+                                <Grid item className={styles.collectorsCol} key={ index } xs={3}>
                                     <CollectorColumn number={index+1} items={ item } />
                                 </Grid>
                             )

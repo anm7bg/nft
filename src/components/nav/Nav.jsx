@@ -16,11 +16,11 @@ export default function Nav() {
                         Home
                     </Link>
                 </li>
-                {/* <li>
+                <li>
                     <Link href="/demo" className={asPath === "/demo" ? styles.active : "list"}>
                         Demo
                     </Link>
-                </li> */}
+                </li>
                 <li>
                     <Link href="#">
                         Activity
