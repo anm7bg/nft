@@ -12,8 +12,8 @@ export default function Nav() {
         <nav>
             <ul className={styles.nav}>
                 <li>
-                    <Link href="/" className={asPath === "/" ? styles.active : "list"}>
-                        Home
+                    <Link href="/" >
+                        <a>Home</a>
                     </Link>
                 </li>
                 {/* <li>

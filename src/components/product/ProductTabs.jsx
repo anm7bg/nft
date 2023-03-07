@@ -66,11 +66,18 @@ export default function ProductTabs({ text, bids }) {
                 </TabPanel>
                 <TabPanel value="2">
                         <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                            {/* <TableHead>
+                                <TableRow>
+                                    <TableCell>User</TableCell>
+                                </TableRow>
+                            </TableHead> */}
                             <TableBody>
                                 {bids.map((rowData, i) => (
                                     <TableRow
                                     key={i}
+                                    // sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                     className={`styles[table-row-${i}] ${styles["table-row"]}`}
+                                    // className={`table-row-${i} ${styles["table-row"]}`}
                                     >
                                         <TableCell>
                                             <User {...rowData.user} />

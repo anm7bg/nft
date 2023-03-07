@@ -110,7 +110,7 @@ const how = {
   // console.log(how)
   return(
     <>
-      <Header type="normal"></Header>
+      {/* <Header type="normal"></Header> */}
       {/* <Featured/> */}
       <Featured items={featuredCards}/>
       <Trending cards={ trendingCards }/>

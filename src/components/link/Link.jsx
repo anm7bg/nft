@@ -67,7 +67,7 @@ const Link = React.forwardRef(function Link(props, ref) {
       return <Anchor className={className} href={href} ref={ref} {...other} />;
     }
 
-    return <MuiLink className={className} href={href} ref={ref} {...other} />;
+    return <span className={className} href={href} ref={ref} {...other} />;
   }
 
   if (noLinkStyle) {

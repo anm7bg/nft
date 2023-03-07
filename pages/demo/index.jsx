@@ -28,9 +28,9 @@ export default function About() {
       <Header />
       <Grid container justifyContent="center">
         <Grid item>
-          <Button variant="contained" component={Link} noLinkStyle href="/">
+          {/* <Button variant="contained" component={Link} noLinkStyle href="/">
             🏠 Home
-          </Button>
+          </Button> */}
         </Grid>
       </Grid>
       {/* <Avatar /> */}
