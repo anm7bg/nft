@@ -3,7 +3,6 @@ import _ from "lodash";
 import { Container, Grid } from "@mui/material";
 import CollectorColumn from "./CollectorColumn";
 import PageHeader from "../header/PageHeader";
-import { borderRadius } from '@mui/system';
 
 export default function TopCollectors( {collectors=[]} ) {
 
